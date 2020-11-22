@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .e1 {
+        background: url('images/1.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin: 100px auto;
+        animation: em1 2s alternate infinite;
+        position: relative;
+      }
+      .e1-e {
+        background: url('images/1.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -160px top;
+        position: absolute;
+        animation: e1 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+
+      .e1-m {
+        background: url('images/1.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -640px top;
+        position: absolute;
+        animation: m1 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+
+      }
+      .e1:hover .e1-m, .e1:hover .e1-e {
+        animation-play-state: running;
+      }
+      @keyframes em1 {
+        0% {transform: rotate(-30deg);}
+         100% {transform: rotate(30deg);}
+      }
+      @keyframes e1 {
+        0% {background-position: -160px top;}
+        33% {background-position: -320px top;}
+        66% {background-position: -480px top;}
+      }
+      @keyframes m1 {
+        0% {background-position: -640px top;}
+        33% {background-position: -800px top;}
+        66% {background-position: -960px top;}
+      }
+
+
+
+      .e2 {
+        background: url('images/2.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin: 100px auto;
+        animation: em2 2s alternate infinite;
+        position: relative;
+      }
+      .e2-e {
+        background: url('images/2.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -160px top;
+        position: absolute;
+        animation: e2 2s steps(1) alternate infinite;
+        animation-play-state: running;
+      }
+
+      .e2-m {
+        background: url('images/2.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -800px top;
+        position: absolute;
+        animation: m2 2s steps(1) alternate infinite;
+        animation-play-state: running;
+
+      }
+      .e2:hover .e2-m, .e2:hover .e2-e {
+        animation-play-state: paused;
+      }
+      .e2:hover {
+        animation-play-state: paused;
+
+      }
+      @keyframes em2 {
+        0% {transform: rotate(45deg);}
+        100% {transform: rotate(-45deg);}
+
+      }
+      @keyframes e2 {
+        0% {background-position: -160px top;}
+        25% {background-position: -320px top;}
+        50% {background-position: -480px top;}
+        75% {background-position: -640px top;}
+
+      }
+      @keyframes m2 {
+        0% {background-position: -800px top;}
+        25% {background-position: -960px top;}
+        50% {background-position: -1120px top;}
+        75% {background-position: -1280px top;}
+      }
+
+
+      .e3 {
+        background: url('images/3.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        margin: 100px auto;
+        animation: em3 2s alternate linear infinite;
+        position: relative;
+      }
+      .e3-e {
+        background: url('images/3.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -160px top;
+        position: absolute;
+        animation: e3 2s steps(1) alternate infinite;
+        animation-play-state: running;
+      }
+
+      .e3-m {
+        background: url('images/3.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -800px top;
+        position: absolute;
+        animation: m3 2s steps(1) alternate infinite;
+        animation-play-state: running;
+
+      }
+      .e3-b {
+        background: url('images/3.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -480px top;
+        position: absolute;
+        animation: b3 2s steps(1) alternate infinite;
+        animation-play-state: running;
+
+      }
+      .e3-water {
+        background: url('images/3.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -1280px top;
+        position: absolute;
+        animation: w3 2s steps(1) alternate infinite;
+        animation-play-state: running;
+
+      }
+      .e3:hover .e3-m, .e3:hover .e3-e, .e3:hover .e3-b, .e3:hover .e3-water {
+        animation-play-state: paused;
+      }
+      .e3:hover {
+        animation-play-state: paused;
+      }
+      @keyframes em3 {
+        0% {left: 0px;}
+        97%,  100% {left: 200px;}
+
+      }
+      @keyframes e3 {
+        0% {background-position: -160px top;}
+        25% {background-position: -320px top;}
+        50% {background-position: -320px top;}
+        75% {background-position: -160px top;}
+
+      }
+      @keyframes m3 {
+        0% {background-position: -800px top;}
+        25% {background-position: -960px top;}
+        50% {background-position: -1120px top;}
+        75% {background-position: -1120px top;}
+      }
+      @keyframes b3 {
+        0% {background-position: -480px top;}
+        25% {background-position: -640px top;}
+
+      }
+      @keyframes w3 {
+        0% {background-position: -1440px top;}
+        75% {background-position: -1280px top;}
+      }
+
+
+      .e4 {
+        background: url('images/4.png');
+        width: 160px;
+        height: 160px;
+        margin: 100px auto;
+        display: block;
+        animation: em4 2s alternate infinite;
+        position: relative;
+      }
+      .e4-e {
+        background: url('images/4.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -160px top;
+        position: absolute;
+        animation: e4 1s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+
+      .e4-m {
+        background: url('images/4.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -640px top;
+        position: absolute;
+        animation: m4 1s steps(1) alternate infinite;
+        animation-play-state: paused;
+
+      }
+      .e4:hover .e4-m, .e4:hover .e4-e {
+        animation-play-state: running;
+      }
+      .e4:hover {
+        animation-play-state: paused;
+      }
+      @keyframes em4 {
+        0% {left: 100px}
+        100% {left: 200px;}
+
+      }
+      @keyframes e4 {
+        0% {background-position: -160px top;}
+        33% {background-position: -320px top;}
+        66% {background-position: -480px top;}
+
+      }
+      @keyframes m4 {
+        0% {background-position: -640px top;}
+        33% {background-position: -800px top;}
+      }
+
+
+      .e5 {
+        background: url('images/5.png');
+        width: 160px;
+        height: 160px;
+        margin: 100px auto;
+        display: block;
+        animation: em5 2s alternate linear infinite;
+        animation-play-state: paused;
+        position: relative;
+      }
+      .e5-e {
+        background: url('images/5.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -160px top;
+        position: absolute;
+        animation: e5 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+      }
+
+      .e5-m {
+        background: url('images/5.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -480px top;
+        position: absolute;
+        animation: m5 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+
+      }
+      .e5-b {
+        background: url('images/5.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -800px top;
+        position: absolute;
+        animation: b5 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+
+      }
+      .e5-h {
+        background: url('images/5.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -1120px top;
+        position: absolute;
+        animation: h5 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+
+      }
+      .e5-blush {
+        background: url('images/5.png');
+        width: 160px;
+        height: 160px;
+        display: block;
+        left: 0;
+        top: 0;
+        background-position: -1280px top;
+        position: absolute;
+        animation: blush5 2s steps(1) alternate infinite;
+        animation-play-state: paused;
+
+      }
+      .e5:hover .e5-m, .e5:hover .e5-e, .e5:hover .e5-b, .e5:hover .e5-h, .e5:hover .e5-blush {
+        animation-play-state: running;
+      }
+      .e5:hover {
+        animation-play-state: running;
+      }
+      @keyframes em5 {
+        0% {left: 0px;}
+        97%,  100% {left: 200px;}
+
+      }
+      @keyframes e5 {
+        0% {background-position: -160px top;}
+        25% {background-position: -160px top;}
+        50% {background-position: -320px top;}
+        75% {background-position: -320px top;}
+
+      }
+      @keyframes m5 {
+        0% {background-position: -480px top;}
+        25% {background-position: -640px top;}
+        50% {background-position: -640px top;}
+        75% {background-position: -640px top;}
+      }
+      @keyframes b5 {
+        0% {background-position: -800px top;}
+        25% {background-position: -960px top;}
+        50% {background-position: -960px top;}
+        75% {background-position: -960px top;}
+      }
+      @keyframes h5 {
+        0% {background-position: -1600px top;}
+        50% {background-position: -1120px top;}
+        75% {background-position: -1280px top;}
+      }
+      @keyframes blush5 {
+        0% {background-position: -1600px top;}
+        25% {background-position: -1440px top;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="e2">
+      <div class="e2-e"></div>
+      <div class="e2-m"></div>
+    </div>
+
+    <div class="e3">
+      <div class="e3-e"></div>
+      <div class="e3-m"></div>
+      <div class="e3-b"></div>
+      <div class="e3-water"></div>
+    </div>
+
+    <div class="e4">
+      <div class="e4-e"></div>
+      <div class="e4-m"></div>
+    </div>
+
+    <div class="e5">
+      <div class="e5-e"></div>
+      <div class="e5-m"></div>
+      <div class="e5-b"></div>
+      <div class="e5-h"></div>
+      <div class="e5-blush"></div>
+    </div>
+
+    <div class="e1">
+      <div class="e1-e"></div>
+      <div class="e1-m"></div>
+    </div>
+  </body>
+</html>
