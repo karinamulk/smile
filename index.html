@@ -23,7 +23,7 @@
         background-position: -160px top;
         position: absolute;
         animation: e1 2s steps(1) alternate infinite;
-        animation-play-state: paused;
+        animation-play-state: running;
       }
 
       .e1-m {
@@ -36,11 +36,11 @@
         background-position: -640px top;
         position: absolute;
         animation: m1 2s steps(1) alternate infinite;
-        animation-play-state: paused;
+        animation-play-state: running;
 
       }
       .e1:hover .e1-m, .e1:hover .e1-e {
-        animation-play-state: running;
+        animation-play-state: paused;
       }
       @keyframes em1 {
         0% {transform: rotate(-30deg);}
